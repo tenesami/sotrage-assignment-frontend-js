@@ -1,5 +1,6 @@
 const display = document.getElementById("display")
 const sotre_container = document.getElementById("container")
+
 display.addEventListener("click", () => {
 
     fetch("http://localhost:3000/stores").then(function(res) {
