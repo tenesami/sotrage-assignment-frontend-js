@@ -1,5 +1,6 @@
 const display = document.getElementById("display")
 const sotre_container = document.getElementById("container")
+const submit_form = document.getElementById("form")
 
 display.addEventListener("click", () => {
 
@@ -22,3 +23,11 @@ display.addEventListener("click", () => {
     //clear out the button after one click
     sotre_container.innerHTML = ''
 })
+
+
+const handleForm = (e) => {
+    e.preventDefault()
+    console.log(e.target)
+}
+
+submit_form.addEventListener("submit", handleForm);
